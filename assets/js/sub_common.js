@@ -5,7 +5,7 @@ $(document).ready(function() {
     /* url */
     let myURL = $(location).attr("href").split("/");
     myURL = myURL[myURL.length-1];
-    myURL = myURL.replace(".html", "");
+    myURL = myURL.replace(".html", "").replace("coco/", "");
 
     $('#content .pagettl h2').html(myURL);
 
