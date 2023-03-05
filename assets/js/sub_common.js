@@ -3,12 +3,10 @@ $(document).ready(function() {
     var screenSize, screenHeight;
     
     /* url */
-    let myURL = $(location).attr('pathname'); // /about.html
-    myURL = myURL.replace("/", "").replace(".html", "");
+    let myURL = $(location).attr("href").split("/");
+    myURL = myURL[myURL.length-1];
+    myURL = myURL.replace(".html", "");
 
-    console.log(myURL);
-    
-    //$('.videoBox h2').html(myURL); // 페이지 타이틀 변경
     $('#content .pagettl h2').html(myURL);
 
     function screen_size(){

@@ -22,14 +22,6 @@
     <script src="assets/js/trailer.js"></script>
 
 	<script>
-	// <![CDATA[
-		try {
-			window.addEventListener('load', function(){
-				setTimeout(scrollTo, 0, 0, 1); 
-			}, false);
-		} catch(e) {}
-	// ]]>
-    
     // youtube service worker preload
     self.addEventListener( "activate", event => { event.waitUntil( async function () { // Feature-detect
         if ( self.registration.navigationPreload ) { // Enable navigation preloads!
